@@ -48,5 +48,18 @@ def test_throw_404_users_not_existing():
     assert response.status_code == 404, f"Expected status code 404, but got {response.status_code}"
 
     url3 = f"{BASE_URL}/{PEOPLE}/84"
-    response = requests.get(url2)
+    response = requests.get(url3)
     assert response.status_code == 404, f"Expected status code 404, but got {response.status_code}"
+
+    url4 = f"{BASE_URL}/{PEOPLE}/$"
+    response = requests.get(url4)
+    assert response.status_code == 404, f"Expected status code 404, but got {response.status_code}"
+
+    url5 = f"{BASE_URL}/{PEOPLE}/A"
+    response = requests.get(url5)
+    assert response.status_code == 404, f"Expected status code 404, but got {response.status_code}"
+
+    ## assert that response body is 
+    # {
+    #     "detail": "Not found"
+    # }

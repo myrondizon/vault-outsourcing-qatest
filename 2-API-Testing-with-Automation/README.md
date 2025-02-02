@@ -32,7 +32,8 @@ Include setup instructions and dependencies in the README.md.
 1. Chose PyTest because I had experience with it
 2. Would normally do this in Postman as I also had experience with it
 3. Made a folder containing all the py files; one file for the variables for reusability, and one file for the tests.
-4. Utilized SWAPI to demonstrate the GET for a user. 
+4. Utilized SWAPI to simulate the GET for a user. While the SWAPI/people response doesn't include the user_id; checking the name and height should be the same mechanism as querying name and email as per test exam spec.
+5. Other desired assertions have been commented in. 
 
 # Assumptions
 1. Reviewer has Windows machine
