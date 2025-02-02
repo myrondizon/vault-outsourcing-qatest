@@ -1,0 +1,5 @@
+from methods import test_URL_returns_200, test_retrieve_existing_user, test_throw_404_users_not_existing
+
+test_URL_returns_200()
+test_retrieve_existing_user()
+test_throw_404_users_not_existing()
